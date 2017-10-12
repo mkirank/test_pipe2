@@ -1,0 +1,26 @@
+jobs:
+
+  - name: runSh_1_1
+    type: runSh
+    allowPublicAccess: true
+    steps:
+      - IN: nginx-image
+      - TASK:
+        - script: sleep 10
+        
+  - name: runSh_2_1
+    type: runSh
+    steps:
+      - IN: runSh_1_1
+      - TASK:
+        - script: sleep 1
+    flags:
+        - flag4
+        - flag5
+        - flag6
+  - name: runSh_3_1
+    type: runSh
+    steps:
+      - IN: runSh_2_1
+      - TASK:
+        - script: sleep 1   

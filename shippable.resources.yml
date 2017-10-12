@@ -1,0 +1,13 @@
+resources:
+  - name: time-trigger-1
+    type: time
+    seed: 
+      interval: "1 1 */1 * *"
+
+  - name: nginx-image
+    type: image
+    integration: "docker-subint"
+    pointer:
+      sourceName: "ankul/nginx"
+    seed:
+      versionName: prod.10

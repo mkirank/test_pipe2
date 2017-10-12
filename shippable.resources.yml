@@ -1,10 +1,10 @@
 resources:
-  - name: time-trigger-1
+  - name: time-trigger-pipe_2
     type: time
     seed: 
       interval: "1 1 */1 * *"
 
-  - name: nginx-image
+  - name: nginx-image_pipe2
     type: image
     integration: "docker-subint"
     pointer:

@@ -13,11 +13,9 @@ jobs:
     steps:
       - IN: runSh_1_1
       - TASK:
-        - script: sleep 1
+        - script: echo "from pipe2"
     flags:
-        - flag4
-        - flag5
-        - flag6
+        - flag_pipe2
   - name: runSh_3_1
     type: runSh
     steps:

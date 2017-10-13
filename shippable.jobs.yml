@@ -4,7 +4,7 @@ jobs:
     type: runSh
     allowPublicAccess: true
     steps:
-      - IN: nginx-image
+      - IN: nginx-image_pipe2
       - TASK:
         - script: sleep 10
         
